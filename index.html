@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Open+Sans:wght@600&family=PT+Sans&family=Poppins:wght@400;700&family=Roboto+Condensed&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="css/style.css">
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js" defer></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" defer></script>
+    <script src="js/script.js" defer></script>
+
+    <title>timburke</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-top">
+            <div class="header-top__inner container">
+                <div class="header-top__btns">
+                    <button class="active">
+                        <svg width="36" height="24" viewBox="0 0 36 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12ZM18.9997 12C18.9997 15.8658 15.8658 18.9997 11.9999 18.9997C8.13408 18.9997 5.00018 15.8658 5.00018 12C5.00018 8.13412 8.13408 5.00021 11.9999 5.00021C15.8658 5.00021 18.9997 8.13412 18.9997 12Z" fill="#FAA633"/>
+                            <path d="M35.8074 0C33.2449 2.01929 31.9643 4.03928 31.9643 6.05856C31.9643 7.2326 32.5958 9.01341 33.858 11.401C35.1202 13.7886 35.7517 15.8199 35.7517 17.4948C35.7517 20.1717 34.62 22.3398 32.3573 24H26.6064C29.1682 21.9807 30.4495 19.9607 30.4495 17.9414C30.4495 16.7674 29.818 14.9866 28.5558 12.599C27.2936 10.2114 26.6621 8.17239 26.6621 6.48189C26.6621 3.82055 27.7938 1.66016 30.0565 0.000705163H35.8074V0Z" fill="#FAA633"/>
+                        </svg>        
+                    </button>
+                    <button>
+                        <svg width="36" height="24" viewBox="0 0 36 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12ZM18.9997 12C18.9997 15.8658 15.8658 18.9997 11.9999 18.9997C8.13408 18.9997 5.00018 15.8658 5.00018 12C5.00018 8.13412 8.13408 5.00021 11.9999 5.00021C15.8658 5.00021 18.9997 8.13412 18.9997 12Z" fill="#fff"/>
+                            <path d="M35.8074 0C33.2449 2.01929 31.9643 4.03928 31.9643 6.05856C31.9643 7.2326 32.5958 9.01341 33.858 11.401C35.1202 13.7886 35.7517 15.8199 35.7517 17.4948C35.7517 20.1717 34.62 22.3398 32.3573 24H26.6064C29.1682 21.9807 30.4495 19.9607 30.4495 17.9414C30.4495 16.7674 29.818 14.9866 28.5558 12.599C27.2936 10.2114 26.6621 8.17239 26.6621 6.48189C26.6621 3.82055 27.7938 1.66016 30.0565 0.000705163H35.8074V0Z" fill="#fff"/>
+                        </svg>        
+                    </button>
+                </div>
+                <select id="userCity" class="header-top__select">
+                    <option value="Kazan">Казань</option>
+                    <option value="Kazan">Рязань</option>
+                </select>
+                <a class="header-top__number" href="tel:+78431234567">+7(843)1-234-567</a>
+                <nav class="header-top__nav">
+                    <a href="#" class="header-nav__link">Гарантия</a>
+                    <a href="#" class="header-nav__link">Контакты</a>
+                    <a href="#" class="header-nav__link">Вопрос-ответ</a>
+                    <a href="#" class="header-nav__link">Блог</a>
+                    <a href="#" class="header-nav__link">Доставка</a>
+                </nav>
+            </div>
+        </div>
+        <div class="header-inner">
+            <div class="container">
+                <a href="/" class="header-inner__logo">
+                    <svg width="83" height="55" viewBox="0 0 83 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M54.9607 27.5C54.9607 42.6878 42.6573 55 27.4803 55C12.3034 55 0 42.6878 0 27.5C0 12.3122 12.3034 0 27.4803 0C42.6573 0 54.9607 12.3122 54.9607 27.5ZM43.5099 27.5C43.5099 36.3593 36.3332 43.5412 27.4802 43.5412C18.6273 43.5412 11.4506 36.3593 11.4506 27.5C11.4506 18.6408 18.6273 11.4589 27.4802 11.4589C36.3332 11.4589 43.5099 18.6408 43.5099 27.5Z" fill="#FAA633"/>
+                        <path d="M82.0314 0C76.1631 4.62753 73.2305 9.25667 73.2305 13.8842C73.2305 16.5747 74.6766 20.6557 77.5671 26.1273C80.4577 31.5988 81.9038 36.2538 81.9038 40.0923C81.9038 46.2268 79.3121 51.1955 74.1305 55H60.9607C66.8274 50.3725 69.7615 45.7433 69.7615 41.1158C69.7615 38.4253 68.3155 34.3443 65.4249 28.8727C62.5344 23.4012 61.0883 18.7284 61.0883 14.8543C61.0883 8.75544 63.6799 3.80453 68.8616 0.001616H82.0314V0Z" fill="#FAA633"/>
+                    </svg>
+                    <span>ОРГТЕХНИКА & СЕРВИС</span>                    
+                </a>
+                <button class="header-inner__catalog">
+                    <img src="img/icons/burger.svg"> каталог
+                </button>
+                <form action="#" class="header-inner__form">
+                    <input type="text" placeholder="Поиск">
+                    <button onclick="clearSearchInput()"><img src="img/icons/close.svg" alt="close"></button>
+                </form>
+                <div class="header-inner__list">
+                    <a href="#" class="header-list__item">
+                        <img src="img/icons/person.svg" alt="user"><span>войти</span>
+                    </a>
+                    <a href="#" class="header-list__item">
+                        <img src="img/icons/favorite.svg" alt="favorite"><span>Избранное</span>
+                    </a>
+                    <a href="#" class="header-list__item">
+                        <img src="img/icons/shopping_cart.svg" alt="shopping_cart">
+                        <span>Корзина</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="container">
+                <nav class="header-bottom__nav">
+                    <a href="#" class="header-nav__link">Принтеры</a>
+                    <a href="#" class="header-nav__link">Картриджи</a>
+                    <a href="#" class="header-nav__link">Запчасти</a>
+                    <a href="#" class="header-nav__link">Заправка картриджей</a>
+                    <a href="#" class="header-nav__link">Ремонт принтеров</a>
+                    <a href="#" class="header-nav__link">Бренды</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section class="slider">
+        <div class="slider-inner">
+            <img src="img/slider/slider-1.jpg" alt="" class="slider-inner__item">
+            <img src="img/slider/slider-2.jpg" alt="" class="slider-inner__item">
+        </div>
+    </section>
+</body>
+</html>

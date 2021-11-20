@@ -1,0 +1,219 @@
+@font-face
+    font-family: 'Gilroy'
+    font-style: normal
+    font-weight: 300
+    src: url('../fonts/Gilroy-Light.ttf')
+    src: local(''), url('../fonts/Gilroy-Light.woff2') format('woff2'), url('../fonts/Gilroy-Light.woff') format('woff'), url('../fonts/Gilroy-Light.ttf') format('truetype')
+
+@font-face
+    font-family: 'Gilroy'
+    font-style: normal
+    font-weight: 800
+    src: url('../fonts/Gilroy-Extrabold.ttf')
+    src: local(''), url('../fonts/Gilroy-Extrabold.woff2') format('woff2'), url('../fonts/Gilroy-Extrabold.woff') format('woff'), url('../fonts/Gilroy-Extrabold.ttf') format('truetype')
+    
+*
+    box-sizing: border-box
+
+.container
+    max-width: 1200px
+    margin: 0 auto
+    width: 100%
+    padding: 0 5px
+
+body
+    min-height: 200vh
+    padding: 0
+    margin: 0
+    font-size: 18px
+
+.header-top
+    background-color: #414141
+    &__inner
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding-left: 80px
+    & &__btns button
+        background: 0
+        border: 0
+        padding: 7px 8px
+        cursor: pointer
+        position: relative
+        &.active
+            background-color: #fff
+        &:first-child
+            margin-right: 9px
+        &:last-child:before
+            content: '3D'
+            color: #fff
+            letter-spacing: 0.075em
+            position: absolute
+            right: -12px
+            top: 3px
+            font-family: 'PT Sans', sans-serif
+    &__select
+        padding: 4px 0 4px 23px
+        background: 0
+        background-image: url('../img/icons/geocity.svg')
+        background-repeat: no-repeat
+        background-position: left center
+        color: #fff
+        font-size: 14px
+        border: 0
+        font-family: 'Roboto', sans-serif
+        font-weight: 500
+        letter-spacing: 0.075em
+        cursor: pointer
+        option
+            color: #000
+    &__number
+        color: #fff
+        font-size: 14px
+        letter-spacing: 0.075em
+        font-family: 'Roboto', sans-serif
+        font-weight: 500
+        text-decoration: none
+    & .header-nav__link
+        color: #fff
+        font-family: 'Roboto', sans-serif
+        font-weight: 500
+        font-size: 14px
+        letter-spacing: 0.075em
+        text-decoration: none
+        &:not(:last-child)
+            margin-right: 32px
+
+.header-inner
+    padding: 12px 0
+    position: fixed
+    z-index: 99
+    width: 100%
+    background-color: #fff
+    .container
+        display: flex
+        align-items: center
+        justify-content: space-between
+    &__logo
+        display: flex
+        align-items: center
+        text-decoration: none
+        span
+            color: #FAA633
+            font-family: 'Open Sans', sans-serif
+            font-weight: 600
+            margin-left: 18px
+            max-width: 117px
+    &__catalog
+        color: #fff
+        padding: 8px 10px
+        background-color: #FAA633
+        font-family: 'Roboto', sans-serif
+        font-weight: 700
+        text-transform: capitalize
+        font-size: 14px
+        letter-spacing: 0.075em
+        border-radius: 36px
+        border: 0
+        cursor: pointer
+        img
+            margin-right: 9px
+            vertical-align: middle
+    &__form 
+        width: 100%
+        max-width: 490px
+        position: relative
+        input
+            padding: 9px 36px 9px 44px
+            border-radius: 50px
+            border: 0
+            width: 100%
+            box-sizing: border-box
+            background-color: #EDEDF0
+            background-image: url('../img/icons/search.svg')
+            background-position: 15px center, right 17px center
+            background-repeat: no-repeat
+            &:not(:placeholder-shown) + button
+                display: block
+        button
+            display: none
+            position: absolute
+            right: 17px
+            top: 50%
+            padding: 0
+            border: 0
+            background-color: 0
+            transform: translateY(-50%)
+            cursor: pointer
+    &__list
+        display: flex
+        justify-content: space-between
+        width: 100%
+        max-width: 254px
+        .header-list__item
+            font-family: 'Roboto Condensed', sans-serif
+            font-size: 14px
+            letter-spacing: 0.075em
+            color: #6C6C6C
+            text-decoration: none
+            text-transform: capitalize
+            text-align: center
+            span
+                display: block
+
+.header-bottom
+    margin-top: 80px
+    padding: 14px 0
+    border-top: 1px solid #E5E5E5
+    &__nav
+        display: flex
+        justify-content: space-between
+        .header-nav__link
+            font-family: 'Roboto', sans-serif
+            font-weight: 300
+            font-size: 16px
+            letter-spacing: 0.075em
+            text-decoration: none
+            color: #000
+            text-transform: capitalize
+
+.slider-inner
+    position: relative
+    &__item
+        height: 430px
+        object-fit: cover
+    &__dots
+        position: absolute
+        bottom: 20px
+        left: 50%
+        transform: translateX(-50%)
+        display: flex
+        padding: 0
+        li
+            list-style: none
+            width: 20px
+            height: 20px
+            display: block
+            box-sizing: content
+            line-height: 0
+            button
+                width: 20px
+                height: 20px
+                font-size: 0
+                background-color: transparent
+                border: 0
+                position: relative
+                &:before
+                    content: ''
+                    width: 14px
+                    height: 14px
+                    background: #878786
+                    display: inline-block
+                    position: absolute
+                    top: 50%
+                    left: 50%
+                    transform: translate(-50%, -50%)
+                    border-radius: 50px
+            &.slick-active button:before
+                background-color: #D89C4B
+
